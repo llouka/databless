@@ -1,6 +1,6 @@
 {
   "name": "@ackee/databless",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A work-in-progress set of yet-bookshelf-only DB helpers and a generic repository.",
   "keywords": [
     "database",
@@ -32,19 +32,22 @@
       "jest-extended"
     ]
   },
+  "overrides": {
+    "bookshelf": "csouth/bookshelf#827ed9ef11f917b728875e58eca2418ed749d4b0"
+  },
   "license": "ISC",
   "dependencies": {
-    "bookshelf": "^0.13.3",
+    "bookshelf": "csouth/bookshelf#827ed9ef11f917b728875e58eca2418ed749d4b0",
     "bookshelf-camelcase": "2.0.1",
     "bookshelf-cursor-pagination": "^1.4.2",
     "bookshelf-paranoia": "^0.11.0",
     "desmond": "^0.5.6",
-    "knex": "^0.19.5",
+    "knex": "^1.0.4",
     "mysql": "^2.15.0"
   },
   "devDependencies": {
     "jest": "^24.5.0",
     "jest-extended": "^0.11.1",
-    "sqlite3": "^4.0.2"
+    "@vscode/sqlite3": "^4.0.11"
   }
 }
